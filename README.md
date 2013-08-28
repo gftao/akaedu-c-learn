@@ -2,6 +2,10 @@ akaedu-c-learn
 ==============
 
 My c learn
-# 宝利通字典
-* hello
 # 作业
+git clone 
+git pull
+git push
+git config
+git add
+git commit -a -m "modify" readme
