@@ -31,9 +31,10 @@ My c learn
         
         void show(int a[], int len)
         {
-        	for(i = 0; i < len; i++)
+          int i;
+        	 for(i = 0; i < len; i++)
         		printf("%3d", a[i]);
-        	putchar('\n');
+        	 putchar('\n');
         }
         
         void swap(int *a, int *b)
@@ -46,13 +47,13 @@ My c learn
         
         int partition(int a[], int start, int end)
         {
-        	int i, tmp;
+        	 int i, tmp;
         	
-        	for(i = start+1, tmp = start; i < end; i++)
-        		if(a[i] < a[tmp])
-        			swap(&a[i], &a[++tmp]);
-        		swap(&a[tmp], &a[start]);
-        	return tmp;
+        	 for(i = start+1, tmp = start; i < end; i++)
+        		 if(a[i] < a[tmp])
+        			 swap(&a[i], &a[++tmp]);
+        	 swap(&a[tmp], &a[start]);
+        	 return tmp;
         }
         
         void quick_sort(int a[], int start, int end)
