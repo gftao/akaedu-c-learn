@@ -13,7 +13,7 @@ My c learn
 
 
 
- *quick_sort.c
+	##quick_sort.c
   
         #include <stdio.h>
         #include <stdlib.h>
@@ -31,10 +31,10 @@ My c learn
         
         void show(int a[], int len)
         {
-          int i;
-        	 for(i = 0; i < len; i++)
+        	int i;
+        	for(i = 0; i < len; i++)
         		printf("%3d", a[i]);
-        	 putchar('\n');
+        	putchar('\n');
         }
         
         void swap(int *a, int *b)
