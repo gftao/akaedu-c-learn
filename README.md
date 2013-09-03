@@ -13,6 +13,7 @@ My c learn
 
 
   *quick_sort.c
+  
         #include <stdio.h>
         #include <stdlib.h>
         
@@ -78,3 +79,4 @@ My c learn
         
             return 0;
          }
+         ##quick_sort 思想是找到a[start]或者a[i]的实际位子， 并把比他小的移到他前面，比他大的移到后面，递归完成所有。
