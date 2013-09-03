@@ -12,3 +12,6 @@ My c learn
 
 
 
+  *quick_sort.c
+  #include <stdio.h>
+  
