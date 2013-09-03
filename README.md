@@ -1,7 +1,8 @@
 akaedu-c-learn
 ==============
 
-My c learn
+My c learn 
+##www.codepad.org  在线编译
 
   * git clone 
   * git pull
@@ -12,7 +13,7 @@ My c learn
 
 
 
-  *quick_sort.c
+ *quick_sort.c
   
         #include <stdio.h>
         #include <stdlib.h>
