@@ -49,7 +49,7 @@ My c learn
         {
         	 int i, tmp;
         	
-        	 for(i = start+1, tmp = start; i < end; i++)
+        	 for(i = start+1, tmp = start; i <= end; i++)
         		 if(a[i] < a[start])
         			 swap(&a[i], &a[++tmp]);
         	 swap(&a[tmp], &a[start]);
