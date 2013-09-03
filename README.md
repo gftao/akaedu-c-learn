@@ -50,7 +50,7 @@ My c learn
         	 int i, tmp;
         	
         	 for(i = start+1, tmp = start; i < end; i++)
-        		 if(a[i] < a[tmp])
+        		 if(a[i] < a[start])
         			 swap(&a[i], &a[++tmp]);
         	 swap(&a[tmp], &a[start]);
         	 return tmp;
@@ -63,7 +63,7 @@ My c learn
         	if(start >= end)
         		return;
         	m = partition(a, start, end);
-        	quick_sort(a, start, m);
+        	quick_sort(a, start, m-1);
         	quick_sort(a, m+1, end);
         }
         
