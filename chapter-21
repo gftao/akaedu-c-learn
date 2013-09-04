@@ -1,1 +1,73 @@
-排序算法
+#排序算法
+
+
+		1 merge-sort.c
+		
+		#include <stdio.h>
+		#include <stdlib.h>
+		
+		#define N	16
+		#define MAX	100
+		
+		void init_arry(int a[], int len)
+		{
+			int i;
+			srand(time(NULL));
+			for(i = 0; i < len; i++)
+				a[i] = rand() % MAX;
+		}
+		
+		void show(int a[], int len)
+		{
+			int i;
+			for(i = 0; i < len; i+)
+				printf("%3d", a[i]);
+			putchar('\n');
+		}
+		
+		void merge(int a[], int start, int mid, int end)
+		{
+			int tmp[end+1];
+			int i;
+			for(i = start; i <= end; i++)
+				tmp[i] = a[i];
+			i = start;
+			int k = start;
+			int j = mid1;
+			while(i <= mid && j <= end)	/* 排序后的前半部分于后半部分合并，小的向前方，直到某一部分排完 */
+				if(tmp[i] < tmp[j])
+					ak++] = tmp[i++];
+				else
+					a[k++] = tmp[j++];
+			while(i <= mid)				/* 前半部分没排完，则全部插入到后面 */
+				a[k++] = tmp[i++];
+			while(j <= end)				/*半部分没排完，则全部插入都后面 */
+				a[k++] = tmp[j++];
+		}
+		
+		void merge_sort(int a[], int start, int end)
+		{
+			int mid;
+			
+			if(start >= end)
+				return;
+			mid = (start + end) / 2; 
+			merge_sort(a, start, mid);
+			merge_sort(a, mid+1, end);
+			merge(a, start, mid, end);
+		}
+		
+		int main(void)
+		{
+			int a[N];
+			int start = 0;
+			int end = N - 1;
+			
+			init_arry(a, N);
+			show(a, N);
+			
+			merge_sort(a, start, end);
+			show(a, N);
+			
+			return 0;
+		}
