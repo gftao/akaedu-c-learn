@@ -1,4 +1,5 @@
-#排序算法
+
+##排序算法
 
 
 		1 merge-sort.c
@@ -20,7 +21,7 @@
 		void show(int a[], int len)
 		{
 			int i;
-			for(i = 0; i < len; i+)
+			for(i = 0; i < len; i++)
 				printf("%3d", a[i]);
 			putchar('\n');
 		}
@@ -33,10 +34,10 @@
 				tmp[i] = a[i];
 			i = start;
 			int k = start;
-			int j = mid1;
+			int j = mid + 1;
 			while(i <= mid && j <= end)	/* 排序后的前半部分于后半部分合并，小的向前方，直到某一部分排完 */
 				if(tmp[i] < tmp[j])
-					ak++] = tmp[i++];
+					a[k++] = tmp[i++];
 				else
 					a[k++] = tmp[j++];
 			while(i <= mid)				/* 前半部分没排完，则全部插入到后面 */
