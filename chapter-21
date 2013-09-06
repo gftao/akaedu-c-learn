@@ -89,7 +89,7 @@
 				a[i] = rand() % MAX;
 		}
 		
-		void shoe(int a[], int len)
+		void show(int a[], int len)
 		{
 			int i;
 			for(i = 0; i < len; i++)
@@ -100,11 +100,12 @@
 		void insert_sort(int a[], int len)
 		{
 			int i, j, tem;
-			for(i = 0; i < len; i++)
+			for(i = 0; i < len; i++){
 				tem = a[i+1];
 				for(j = i; tem < a[j] && j >= 0; j--)
 					a[j+1] = a[j];
 				a[j+1] = tem;
+				}
 		}
 		
 		int main(void)
