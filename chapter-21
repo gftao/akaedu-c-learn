@@ -1,7 +1,6 @@
 ##排序算法
 
-
-		1 merge-sort.c
+### merge-sort.c
 		
 		#include <stdio.h>
 		#include <stdlib.h>
@@ -73,7 +72,7 @@
 		}
 		
 		
-		2 insert-sort
+### insert-sort
 		
 		#include <stdio.h>
 		#include <stdlib.h>
